@@ -1,8 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors =require('cors');
 
-
-const saucesRoute = require('./routes/sauces')
+const saucesRoute = require('./routes/sauces');
+const userRoutes = require('./routes/user');
 
 //connect to MongoDB cluster
 mongoose.connect('mongodb+srv://M4ZOCDB:NYEbgMCHNBwBY07y@cluster0.v8jy3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
@@ -26,7 +27,9 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use('/api/sauce', saucesRoute);
+app.use('/api/sauces', saucesRoute);
+app.use('/api/auth', userRoutes)
 
+app.options('*', cors());
 
 module.exports = app;
