@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path');
 const cors =require('cors');
 
 const saucesRoute = require('./routes/sauces');
@@ -27,8 +28,10 @@ app.use((req, res, next) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use('/images', express.static(path.join(__dirname, 'images')))
+
 app.use('/api/sauces', saucesRoute);
-app.use('/api/auth', userRoutes)
+app.use('/api/auth', userRoutes);
 
 app.options('*', cors());
 
