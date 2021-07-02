@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const cors =require('cors');
 
-const saucesRoute = require('./routes/sauces');
+const saucesRoutes = require('./routes/sauces');
 const userRoutes = require('./routes/user');
 
 //connect to MongoDB cluster
@@ -14,8 +14,6 @@ mongoose.connect('mongodb+srv://M4ZOCDB:NYEbgMCHNBwBY07y@cluster0.v8jy3.mongodb.
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 const app = express();
-
-
 
 //logic to avoid getting stuck by CORS
 app.use((req, res, next) => {
@@ -30,7 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/images', express.static(path.join(__dirname, 'images')))
 
-app.use('/api/sauces', saucesRoute);
+app.use('/api/sauces', saucesRoutes);
 app.use('/api/auth', userRoutes);
 
 app.options('*', cors());
