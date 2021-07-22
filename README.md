@@ -1,9 +1,9 @@
 # Projet 6 OC So Pekocko
   - [Front-end](#front-end)
     - [Piquante](#piquante)
-    - [Development server](#development-server)
+    - [Serveur de développement](#serveur-de-développement)
   - [Back-end](#back-end)
-    - [Package node](#package-node)
+    - [Node et dépendances](#node-et-dépendances)
     - [Infos API](#infos-api)
 --------------------------------------------------------------------------------------------------------------------
 ## Front-end 
@@ -14,7 +14,7 @@ Vous aurez besoin de cloner le repo du front-end (https://github.com/OpenClassro
 
 Ensuite, suivez les instructions fournies.
 
-### Development server
+### Serveur de développement
 
 Lancer `ng serve` pour démarrer le serveur de développement accessible à `http://localhost:4200/`.
 
