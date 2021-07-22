@@ -55,11 +55,12 @@ exports.getAllSauces = (req, res, next) => {
   .catch(error => res.status(400).json({error: error}));
 };
 
-// like/dislike a sauce
+// like/dislike
 exports.likeSauce = (req, res, next) => {
   Sauce.findOne({ _id: req.params.id })
  .then(sauce => {
      switch (req.body.like) {
+        //dislike a sauce
          case -1:
              Sauce.updateOne({ _id: req.params.id }, {
                  $inc: {dislikes:1},
@@ -69,6 +70,7 @@ exports.likeSauce = (req, res, next) => {
                  .then(() => res.status(201).json({ message: 'Disliked sauce !'}))
                  .catch( error => res.status(400).json({ error }))
              break;
+        //cancel like/dislike
          case 0:
              if (sauce.usersLiked.find(user => user === req.body.userId)) {
                  Sauce.updateOne({ _id : req.params.id }, {
@@ -88,7 +90,8 @@ exports.likeSauce = (req, res, next) => {
                      .then(() => res.status(201).json({message: ' Dislike canceled !'}))
                      .catch( error => res.status(400).json({ error }));
              }
-             break;
+             break;    
+        //like a sauce
          case 1:
              Sauce.updateOne({ _id: req.params.id }, {
                  $inc: { likes:1},
