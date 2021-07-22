@@ -21,7 +21,7 @@ Lancer `ng serve` pour démarrer le serveur de développement accessible à `htt
 --------------------------------------------------------------------------------------------------------------------
 ## Back-end
 
-run "nodemon" pour de lancer le serveur du back-end. Toutes les dépendances de node nécessaires doivent être installées pour que le projet fonctionne.
+run "nodemon" pour lancer le serveur du back-end. Toutes les dépendances de node nécessaires doivent être installées pour que le projet fonctionne.
 
 
 ### Package node 
@@ -47,4 +47,4 @@ run "nodemon" pour de lancer le serveur du back-end. Toutes les dépendances de 
 ### Notice API
 
 
- Important: [informations de l'api !](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P6/Guidelines+API.pdf "Redirection sur le lien fournit par Openclassrooms")
+ [Fiche d'informations de l'API](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P6/Guidelines+API.pdf "Redirection sur le lien fournit par Openclassrooms")
