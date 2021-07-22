@@ -1,16 +1,16 @@
 # Projet 6 OC So Pekocko
-  - [Front-end](#for-the-front-end)
+  - [Front-end](#front-end)
     - [Piquante](#piquante)
     - [Development server](#development-server)
-  - [Back-end](#for-the-back-end)
+  - [Back-end](#back-end)
     - [Package node](#package-node)
-    - [Notice API](#notice-api)
+    - [Infos API](#infos-api)
 --------------------------------------------------------------------------------------------------------------------
 ## Front-end 
 
 ### Piquante
 
-Vous aurez besoin de cloner le repo du front-end (https://github.com/OpenClassrooms-Student-Center/dwj-projet6)
+Vous aurez besoin de cloner le [repo du front-end] (https://github.com/OpenClassrooms-Student-Center/dwj-projet6)
 
 Ensuite, suivez les instructions fournies.
 
@@ -44,7 +44,7 @@ run "nodemon" pour lancer le serveur du back-end. Toutes les dépendances de nod
 | helmet                            |Protège l'application contre des attaques connues (cross-site scripting, sniffing, protection xss,...)         |
 | fs                                |(File System) Permet de gèrer les téléchargement et modification d'images                                      |
 
-### Notice API
+### Infos API
 
 
  [Fiche d'informations de l'API](https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/DWJ_FR_P6/Guidelines+API.pdf "Redirection sur le lien fournit par Openclassrooms")
