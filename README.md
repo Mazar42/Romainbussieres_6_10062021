@@ -10,7 +10,7 @@
 
 ### Piquante
 
-Vous aurez besoin de cloner le [repo du front-end] (https://github.com/OpenClassrooms-Student-Center/dwj-projet6)
+Vous aurez besoin de cloner le repo du front-end (https://github.com/OpenClassrooms-Student-Center/dwj-projet6)
 
 Ensuite, suivez les instructions fournies.
 
