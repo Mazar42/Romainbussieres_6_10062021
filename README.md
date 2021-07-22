@@ -24,7 +24,7 @@ Lancer `ng serve` pour démarrer le serveur de développement accessible à `htt
 run "nodemon" pour lancer le serveur du back-end. Toutes les dépendances de node nécessaires doivent être installées pour que le projet fonctionne.
 
 
-### Package node 
+### Node et dépendances 
 
 
 | NPM dépendances                   | Utilité                                                                                                       |
